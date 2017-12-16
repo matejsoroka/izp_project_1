@@ -1,4 +1,4 @@
-# izp_project_1
+# IZP Project 1
 
 ## [FIT VUT] First project from curse Introduction to Programming Systems
 
@@ -12,4 +12,5 @@ The aim of the project is to create a program that would emulate the algorithm f
 ./proj1 *filename* [string]
 
 Filename is name of file which contains simple database of locations.
+
 String is string of characters inserted before searching.
