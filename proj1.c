@@ -18,9 +18,8 @@
 char makeUppercase(char character)
 {
     if (character >= 'a' && character <= 'z')
-    {
         character = character - ('a' - 'A');
-    }
+
     return character;
 }
 
@@ -29,10 +28,10 @@ char makeUppercase(char character)
  *  @param string
  */
 void strupp(char *string) {
+
     for (unsigned i = 0; i < strlen(string); i++)
-    {
         string[i] = makeUppercase(string[i]);
-    }
+
 }
 
 /**
@@ -72,10 +71,11 @@ bool argumentIsValid(char *line, char *argument)
 {
     unsigned len = strlen(argument);
     unsigned validCharacters = 0;
-    for (size_t i = 0; i < len; i++) {
+
+    for (size_t i = 0; i < len; i++)
         if(line[i] == argument[i])
             validCharacters++;
-    }
+
     // if argument length is equal to count of valid characters && locality has same length as argument and locality is not empty string
     if((validCharacters == strlen(line) - 1) && ( strlen(line) - 1 == strlen(argument) ) && stringIsNotEmpty(line))
         printf("Found: %s\n", argument);
@@ -111,20 +111,14 @@ void sort(char *string)
 
     for (i = 0; i < n - 1; i++)
     {
-
         for (j = i + 1; j < n; j++)
         {
-
             if (string[i] > string[j]) {
-
                 temp = string[i];
                 string[i] = string[j];
                 string[j] = temp;
-
             }
-
         }
-
     }
 }
 
@@ -150,9 +144,7 @@ void output(char *enabled, char *locality, int counter) {
 
         for (size_t i = 0; i < strlen(enabled); i++) {
             if(strchr(sorted, enabled[i]) == NULL)
-            {
                 addToList(sorted, enabled[i]);
-            }
         }
 
         sort(sorted);
@@ -177,12 +169,12 @@ bool checkArgument(char *string)
 {
     bool valid = true;
     unsigned len = strlen(string);
+
     for (size_t i = 0; i < len; i++) {
         if(!validCharacter(string[i]))
-        {
             valid = false;
-        }
     }
+
     return valid;
 }
 
