@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
-#define LOCATION_MAX_LENGTH 100 /* konstanta pre maximalnu dlzku lokality */
+#define LOCATION_MAX_LENGTH 100 /* maximal location length */
 
 
 /**
@@ -108,7 +108,7 @@ void sort(char *string)
     char temp;
     int i, j;
     int n = strlen(string);
-    
+
     for (i = 0; i < n - 1; i++)
     {
 
