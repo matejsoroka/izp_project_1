@@ -2,6 +2,8 @@
 
 ## [FIT VUT] First project from curse Introduction to Programming Systems
 
+## 4.7 / 5
+
 Cílem projektu je vytvořit program, který by emuloval algoritmus výpočtu povolení a zakázání kláves na virtuální klávesnici navigace. Vstupem programu jsou data známých adres a uživatelem zadaný řetězec. Výstup programu bude obsahovat znaky, které mají být na klávesnici povoleny.
 
 Translated with Google Translator
