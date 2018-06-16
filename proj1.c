@@ -18,7 +18,7 @@
 char makeUppercase(char character)
 {
     if (character >= 'a' && character <= 'z')
-        character = character - ('a' - 'A');
+        character -= ('a' - 'A'); // ASCII table
 
     return character;
 }
@@ -42,8 +42,7 @@ void strupp(char *string) {
  */
 char getEnabledChar(char *argument, char *line)
 {
-    int len = strlen(argument);
-    return line[len];
+    return line[strlen(argument)];
 }
 
 /**
